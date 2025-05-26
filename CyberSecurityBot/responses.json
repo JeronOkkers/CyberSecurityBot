@@ -1,0 +1,85 @@
+﻿{
+  "userNamePrompt": "Before we start, what's your name?",
+  "userInterestPrompt": "What cybersecurity topic are you most interested in today (e.g., passwords, scams, privacy)?",
+  "greetings": [
+    "Hello {userName}! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.",
+    "Hi {userName}! Ready to learn about cybersecurity?",
+    "Hey {userName}! Let's explore some cybersecurity topics."
+  ],
+  "farewells": [
+    "Goodbye, {userName}! Stay safe online.",
+    "Take care, {userName}! Feel free to return if you have more questions.",
+    "Stay vigilant, {userName}! Bye for now."
+  ],
+  "topics": [
+    {
+      "topicName": "PasswordSafety",
+      "keywords": [ "password", "password safety", "secure password", "strong password" ],
+      "responses": [
+        "Make sure to use strong, unique passwords for each account. A good password is typically at least 12-15 characters long and includes a mix of uppercase letters, lowercase letters, numbers, and symbols. Avoid using personal details like birthdays or common words.",
+        "A strong password is your first line of defense! Consider using a password manager to help you create and store complex, unique passwords for all your accounts.",
+        "For password safety, enable two-factor authentication (2FA) wherever possible. This adds an extra layer of security beyond just your password."
+      ],
+      "follow_up_prompt": "Would you like more tips on creating strong passwords or perhaps about password managers?",
+      "sentiments": {
+        "worried": "It's wise to be concerned about password safety, {userName}. Strong passwords are crucial. Let's ensure yours are top-notch!",
+        "curious": "Great question about passwords, {userName}! It's a fundamental part of online security."
+      }
+    },
+    {
+      "topicName": "Scams",
+      "keywords": [ "scam", "phishing", "phishing tips", "identify scam", "report scam" ],
+      "responses": [
+        "Be cautious of emails, messages, or calls asking for personal information or immediate payment. Scammers often disguise themselves as trusted organizations like banks or government agencies.",
+        "Never click on suspicious links or download attachments from unknown senders. Always verify the sender's identity through a separate, trusted channel if you're unsure.",
+        "If an offer seems too good to be true, it probably is. Be wary of urgent requests, threats, or high-pressure tactics designed to make you act without thinking.",
+        "Phishing tip: Look out for generic greetings (Dear Customer), poor grammar, and urgent calls to action in emails. Hover over links to see the actual URL before clicking."
+      ],
+      "follow_up_prompt": "We can discuss how to identify specific types of scams or what to do if you encounter one. What do you think?",
+      "sentiments": {
+        "worried": "It's completely understandable to feel worried about online scams, {userName}. They can be very convincing. Let me share some tips to help you stay safe.",
+        "curious": "It's excellent that you're curious about scams and phishing, {userName}! Knowledge is power when it comes to avoiding them."
+      }
+    },
+    {
+      "topicName": "Privacy",
+      "keywords": [ "privacy", "online privacy", "data privacy", "protect privacy" ],
+      "responses": [
+        "Regularly review the privacy settings on your social media accounts and other online services to control who sees your information.",
+        "Be mindful of the information you share online. Even seemingly harmless details can be pieced together by malicious actors.",
+        "Consider using a Virtual Private Network (VPN) for an extra layer of privacy, especially when using public Wi-Fi networks."
+      ],
+      "follow_up_prompt": "Are you interested in learning more about VPNs, managing social media privacy settings, or understanding data collection?",
+      "sentiments": {
+        "worried": "Privacy is a valid concern in today's digital world, {userName}. Let's explore how you can better protect your personal information online.",
+        "curious": "That's a great topic, {userName}! Understanding online privacy is key to controlling your digital footprint."
+      }
+    }
+  ],
+  "general_inquiries": [
+    {
+      "keywords": [ "how are you", "how are you doing" ],
+      "response": "I'm functioning optimally, ready to assist you with cybersecurity awareness, {userName}!"
+    },
+    {
+      "keywords": [ "what is your purpose", "what do you do", "your purpose" ],
+      "response": "My purpose is to be your Cybersecurity Awareness Assistant! I'm here to educate you on identifying and mitigating cyber threats in a conversational way. [cite: 23, 24, 25]"
+    },
+    {
+      "keywords": [ "what can i ask you", "what can you do", "help" ],
+      "response": "You can ask me about various cybersecurity topics like password safety, recognizing phishing scams, safe Browse habits, and online privacy. [cite: 26] How can I help you today, {userName}?"
+    }
+  ],
+  "default_responses": [
+    "I didn't quite understand that, {userName}. Could you please rephrase your question, perhaps using terms like 'password', 'scam', or 'privacy'?",
+    "I'm still learning! I'm not sure how to respond to that, {userName}. Try asking about common cybersecurity threats.",
+    "Hmm, I don't have information on that specific query, {userName}. My expertise lies in cybersecurity awareness topics like phishing, password security, and online privacy."
+  ],
+  "sentiment_acknowledgements": {
+    "worried": "It sounds like you're a bit worried, {userName}, and that's perfectly okay. ",
+    "curious": "I sense your curiosity, {userName}! That's a great way to learn. ",
+    "frustrated": "I understand this might be a bit frustrating, {userName}. Let's see if I can explain it differently. "
+  },
+  "empty_input_response": "It seems like you didn't type anything, {userName}. Please ask a question or type 'bye' to exit.",
+  "exit_keywords": [ "bye", "exit", "quit", "goodbye" ]
+}
